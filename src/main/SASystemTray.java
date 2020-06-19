@@ -29,7 +29,7 @@ public class SASystemTray {
         final PopupMenu popup = new PopupMenu();
         TrayIcon trayIcon;
 
-        trayIcon = new TrayIcon(createImage("../images/icon.png", "tray icon"));
+        trayIcon = new TrayIcon(createImage("../images/icon-64x64.png", "tray icon"));
         trayIcon.setImageAutoSize(true);
 
         ActionListener startStopListener = new ActionListener() {

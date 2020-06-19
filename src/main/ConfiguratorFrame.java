@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 
 import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
@@ -25,9 +26,9 @@ public class ConfiguratorFrame {
 
 	public ConfiguratorFrame() {
 		frame = new JFrame(gc);
-
+		
 		frame.setTitle("StayAwake - Configure");
-		frame.setSize(400, 200);
+		frame.setSize(400, 230);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.setAutoRequestFocus(true);
 		frame.setAlwaysOnTop(true);
@@ -123,13 +124,12 @@ public class ConfiguratorFrame {
 //		frame.add(launchPanel, constraints);
 
 		constraints.insets.top = 0;
-		constraints.insets.bottom = 0;
+		constraints.insets.bottom = 10;
 		constraints.weighty = 0.1;
 		constraints.gridy = 2;
 		frame.add(actionPanel, constraints);
 
 		ActionListener cancelListener = new ActionListener() {
-
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
@@ -137,7 +137,6 @@ public class ConfiguratorFrame {
 		};
 
 		ActionListener saveListener = new ActionListener() {
-
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				Main.getPrefs().putInt(Main.FREQ_KEY, (Integer) spinner.getValue());
@@ -159,6 +158,7 @@ public class ConfiguratorFrame {
 
 	public void displayConfigurator() {
 		frame.setLocationRelativeTo(null);
+		frame.setIconImage(new ImageIcon("../images/icon-64x64.png").getImage());
 		frame.setVisible(true);
 		frame.setAlwaysOnTop(false);
 	}

@@ -40,6 +40,12 @@ https://github.com/darwinnacionales/StayAwakeV2
 
 <img width="674" alt="Screenshot 2020-06-20 at 8 48 33 PM" src="https://user-images.githubusercontent.com/7297625/85202222-7a05e000-b337-11ea-90ce-6060937e000a.png">
 
+**For Windows**
+1. Create a desktop shortcut or a shortcut of the downloaded file.
+2. Open Windows Explorer and type %AppData% into the file explorer address bar.
+3. Open the Microsoft folder -> Windows -> Start Menu -> Programs -> Start-up
+4. Copy and paste the shortcut you created earlier
+
 ## Note
 This tool is not intended to promote laziness in work or school. I find it useful for personal reasons and I hope it will be the same for you too. :)
 

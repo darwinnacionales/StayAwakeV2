@@ -12,7 +12,9 @@ If you just prefer to download the app and run it, follow the steps below:
 2. Right-click `StayAwake.jar` and select `Save Link As...`
 3. Download the file to a directory you prefer
 4. Double click the file and it should show an icon similar to the one below:
+
 MacOS:
+
 <img width="555" alt="Screenshot 2020-06-20 at 12 51 25 PM" src="https://user-images.githubusercontent.com/7297625/85192395-f6c39a80-b2f4-11ea-8ec0-a069cf09f05f.png">
 
 Windows:

@@ -1,0 +1,39 @@
+# StayAwakeV2
+
+Your computer, by default, sleeps (and shutdowns) after a couple of minutes of inactivity. This is not good if by intention you prefer it to stay awake due to whatever reason (downloading files overnight, etc.). 
+
+And yes, you may opt to changing the settings in Energy Saver for MacOS or Power Options for Windows. But if your use case is to remain active in some applications, say Slack or Skype, keeping your machine awake will still change your status in these applications as "Away" after a couple of minutes.
+
+This is where StayAwake app comes in. It will move your cursor 1px to the right and back after 30 seconds (by default) to simulate a moving mouse. You can also configure its frequency.
+
+# How-To
+If you just prefer to download the app and run it, follow the steps below:
+1. Go to this link: https://github.com/darwinnacionales/StayAwakeV2/tree/master/export
+2. Right-click `StayAwake.jar` and select `Save Link As...`
+3. Download the file to a directory you prefer
+4. Double click the file and it should show an icon similar to the one below:
+MacOS:
+<img width="555" alt="Screenshot 2020-06-20 at 12 51 25 PM" src="https://user-images.githubusercontent.com/7297625/85192395-f6c39a80-b2f4-11ea-8ec0-a069cf09f05f.png">
+
+Windows:
+
+<img width="300" alt="Screenshot 2020-06-20 at 12 51 25 PM" src="https://user-images.githubusercontent.com/7297625/85192459-2d011a00-b2f5-11ea-8a01-030139a39168.JPG">
+
+*Note: It may ask permission first depending on your machine. Just allow it and it should work.*
+
+5. Right-click the icon and select `Start`. By default, it will move the cursor 1px to the right then left every 30 seconds.
+6. To change the frequency, right-click the icon and select `Configure`. Update the Frequency Field then click `Save`. Right-click the icon once again, select `Stop` then select `Start` for the changes to reflect immediately.
+
+For anyone doubting the application for any malicious codes, you may explore the the GitHub below for the source code. Feel free to build the codes by yourself. :)
+
+https://github.com/darwinnacionales/StayAwakeV2
+
+## Note
+This tool is not intended to promote laziness in work or school. I find it useful for personal reasons and I hope it will be the same for you too. :)
+
+# Future Improvements
+- Launch application upon Login
+- Start mouse movement upon launch of application
+- Automatically stop after certain period of time
+
+Feel free to suggest if you have any feature preferences!

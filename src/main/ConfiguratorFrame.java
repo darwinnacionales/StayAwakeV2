@@ -8,7 +8,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 
 import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
@@ -18,6 +17,8 @@ import javax.swing.JSpinner;
 import javax.swing.SpinnerModel;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.border.Border;
+
+import util.ImageLoader;
 
 public class ConfiguratorFrame {
 	private static GraphicsConfiguration gc;
@@ -158,7 +159,7 @@ public class ConfiguratorFrame {
 
 	public void displayConfigurator() {
 		frame.setLocationRelativeTo(null);
-		frame.setIconImage(new ImageIcon("../images/icon-64x64.png").getImage());
+		frame.setIconImage(ImageLoader.createImage("/images/icon-64x64.png", "tray icon"));
 		frame.setVisible(true);
 		frame.setAlwaysOnTop(false);
 	}

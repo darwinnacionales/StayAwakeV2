@@ -50,7 +50,6 @@ https://github.com/darwinnacionales/StayAwakeV2
 This tool is not intended to promote laziness in work or school. I find it useful for personal reasons and I hope it will be the same for you too. :)
 
 # Future Improvements
-- Launch application upon Login
 - Start mouse movement upon launch of application
 - Automatically stop after certain period of time
 

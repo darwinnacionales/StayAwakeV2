@@ -32,7 +32,7 @@ public class Controller {
                     	}
                         
                         robot.mouseMove((int)MouseInfo.getPointerInfo().getLocation().getX() + 1, (int)MouseInfo.getPointerInfo().getLocation().getY());
-                        robot.delay(1);
+                        robot.delay(5);
                         robot.mouseMove((int)MouseInfo.getPointerInfo().getLocation().getX() - 1, (int)MouseInfo.getPointerInfo().getLocation().getY());
                         robot.delay(Main.getPrefs().getInt(Main.FREQ_KEY, Main.FREQ_DEF) * 1000);
                     }

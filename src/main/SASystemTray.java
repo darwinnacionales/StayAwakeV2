@@ -1,16 +1,14 @@
 package main;
 
 import java.awt.AWTException;
-import java.awt.Image;
 import java.awt.MenuItem;
 import java.awt.PopupMenu;
 import java.awt.SystemTray;
 import java.awt.TrayIcon;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.net.URL;
 
-import javax.swing.ImageIcon;
+import util.ImageLoader;
 
 public class SASystemTray {
     private Controller ctrl;
@@ -18,7 +16,6 @@ public class SASystemTray {
     public SASystemTray(Controller ctrl) {
     	this.ctrl = ctrl;
     }
-    
 
     public void start() {
         if (!SystemTray.isSupported()) {
@@ -29,7 +26,7 @@ public class SASystemTray {
         final PopupMenu popup = new PopupMenu();
         TrayIcon trayIcon;
 
-        trayIcon = new TrayIcon(createImage("../images/icon.png", "tray icon"));
+        trayIcon = new TrayIcon(ImageLoader.createImage("/images/icon-64x64.png", "tray icon"));
         trayIcon.setImageAutoSize(true);
 
         ActionListener startStopListener = new ActionListener() {
@@ -79,16 +76,5 @@ public class SASystemTray {
             e.printStackTrace();
         }
 
-    }
-
-    protected static Image createImage(String path, String description) {
-        URL imageURL = SASystemTray.class.getResource(path);
-
-        if (imageURL == null) {
-            System.err.println("Resource not found: " + path);
-            return null;
-        } else {
-            return (new ImageIcon(imageURL, description)).getImage();
-        }
     }
 }

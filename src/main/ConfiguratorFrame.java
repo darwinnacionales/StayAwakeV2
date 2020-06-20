@@ -18,6 +18,8 @@ import javax.swing.SpinnerModel;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.border.Border;
 
+import util.ImageLoader;
+
 public class ConfiguratorFrame {
 	private static GraphicsConfiguration gc;
 	private static ConfiguratorFrame configFrame;
@@ -25,9 +27,9 @@ public class ConfiguratorFrame {
 
 	public ConfiguratorFrame() {
 		frame = new JFrame(gc);
-
+		
 		frame.setTitle("StayAwake - Configure");
-		frame.setSize(400, 200);
+		frame.setSize(400, 230);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.setAutoRequestFocus(true);
 		frame.setAlwaysOnTop(true);
@@ -123,13 +125,12 @@ public class ConfiguratorFrame {
 //		frame.add(launchPanel, constraints);
 
 		constraints.insets.top = 0;
-		constraints.insets.bottom = 0;
+		constraints.insets.bottom = 10;
 		constraints.weighty = 0.1;
 		constraints.gridy = 2;
 		frame.add(actionPanel, constraints);
 
 		ActionListener cancelListener = new ActionListener() {
-
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
@@ -137,7 +138,6 @@ public class ConfiguratorFrame {
 		};
 
 		ActionListener saveListener = new ActionListener() {
-
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				Main.getPrefs().putInt(Main.FREQ_KEY, (Integer) spinner.getValue());
@@ -159,6 +159,7 @@ public class ConfiguratorFrame {
 
 	public void displayConfigurator() {
 		frame.setLocationRelativeTo(null);
+		frame.setIconImage(ImageLoader.createImage("/images/icon-64x64.png", "tray icon"));
 		frame.setVisible(true);
 		frame.setAlwaysOnTop(false);
 	}

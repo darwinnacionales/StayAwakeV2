@@ -34,8 +34,8 @@ https://github.com/darwinnacionales/StayAwakeV2
 
 **For Windows**
 1. Create a desktop shortcut or a shortcut of the downloaded file.
-2. Open Windows Explorer and type %AppData% into the file explorer address bar.
-3. Open the Microsoft folder -> Windows -> Start Menu -> Programs -> Start-up
+2. Open Windows Explorer and type `%AppData%` into the file explorer address bar.
+3. Open the `Microsoft` folder -> `Windows` -> `Start Menu` -> `Programs` -> `Start-up`
 4. Copy and paste the shortcut you created earlier
 
 **For MacOS**

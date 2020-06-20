@@ -30,6 +30,16 @@ For anyone doubting the application for any malicious codes, you may explore the
 
 https://github.com/darwinnacionales/StayAwakeV2
 
+# Run App on Login
+
+**For MacOS**
+1. Open `System Preferences`
+2. Select `Users and Groups`
+3. Select `Login Items` tab
+4. Add the downloaded file in the list
+
+<img width="674" alt="Screenshot 2020-06-20 at 8 48 33 PM" src="https://user-images.githubusercontent.com/7297625/85202222-7a05e000-b337-11ea-90ce-6060937e000a.png">
+
 ## Note
 This tool is not intended to promote laziness in work or school. I find it useful for personal reasons and I hope it will be the same for you too. :)
 

@@ -4,7 +4,7 @@ Your computer, by default, sleeps (and shutdowns) after a couple of minutes of i
 
 And yes, you may opt to changing the settings in Energy Saver for MacOS or Power Options for Windows. But if your use case is to remain active in some applications, say Slack or Skype, keeping your machine awake will still change your status in these applications as "Away" after a couple of minutes.
 
-This is where StayAwake app comes in. It will move your cursor 1px to the right and back after 30 seconds (by default) to simulate a moving mouse. You can also configure its frequency.
+This is where StayAwake app comes in. It will move your cursor 1px to the right and back every 30 seconds (by default) to simulate a moving mouse. You can also configure its frequency.
 
 # How-To
 If you just prefer to download the app and run it, follow the steps below:

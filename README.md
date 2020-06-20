@@ -8,8 +8,8 @@ This is where StayAwake app comes in. It will move your cursor 1px to the right 
 
 # How-To
 If you just prefer to download the app and run it, follow the steps below:
-1. Go to this link: https://github.com/darwinnacionales/StayAwakeV2/tree/master/export
-2. Right-click `StayAwake.jar` and select `Save Link As...`
+1. Go to this link: https://www.dropbox.com/s/axdgbjhlkwgow0v/StayAwake.jar?dl=0
+2. Click `Download` then `Direct Download`
 3. Download the file to a directory you prefer
 4. Double click the file and it should show an icon similar to the one below:
 
